@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #eee;
+  padding: 0 16px;
+}
+
+header {
+  background-color: #f5ba13;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.create-note {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: min(100%, 480px);
+  margin: 1.5rem auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+}
+
+.create-note h2 {
+  font-size: 1.2rem;
+}
+
+.create-note input,
+.create-note textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.create-note textarea {
+  resize: vertical;
+}
+
+.create-note > button {
+  align-self: flex-end;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+}
+
+.form-error {
+  color: #b00020;
+  font-size: 0.9rem;
+}
+
+.note-editor textarea {
+  width: 100%;
+  min-height: 6rem;
+  resize: vertical;
+}
+
+.note-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.note-actions button {
+  cursor: pointer;
+  padding: 0.35rem 0.6rem;
+}
+
+.note-actions .icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.35rem;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #555;
+}
+
+.note-actions .icon-button:hover {
+  background: #f0f0f0;
+}
+
+.note-actions .icon-button:focus-visible {
+  outline: 2px solid #f5ba13;
+  outline-offset: 2px;
+}
+
+.note-actions .icon-button svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
